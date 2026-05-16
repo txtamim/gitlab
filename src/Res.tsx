@@ -42,7 +42,7 @@ const Res = () => {
           <i className="bi bi-egg-fried text-amber-500 text-2xl"></i>
           <span className="text-xl font-bold tracking-tight text-zinc-900">Flavor House</span>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-zinc-500 font-medium">
+        <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-zinc-500 font-medium ">
           <span className="flex items-center gap-1"><i className="bi bi-telephone text-amber-500"></i> +8801890973552</span>
           <span className="flex items-center gap-1"><i className="bi bi-clock text-amber-500"></i> All time</span>
           <span className="flex items-center gap-1"><i className="bi bi-truck text-amber-500"></i> Free Delivery</span>

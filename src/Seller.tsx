@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Gaming Mouse",
+    name: "Gaming Mouse ",
     price: 45,
     rating: 3,
     img: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format&fit=crop&q=80"

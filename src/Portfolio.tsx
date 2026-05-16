@@ -30,7 +30,7 @@ const Portfolio = () => {
       <div className="max-w-5xl mx-auto px-4 py-8">
         
         {/* --- Hero Section --- */}
-        <section className="rounded-3xl p-1 md:p-12 mb-8">
+        <section className="rounded-3xl p-1 md:p-12 mb-8 ">
           <div className="flex flex-row items-center gap-4 md:gap-10">
             {/* Intro Text */}
             <div className="flex-1">
