@@ -9,7 +9,7 @@ const Portfolio = () => {
       title: "E-commerce Landing Page",
       desc: "Responsive landing page with cart, product filter, and smooth animations",
       tech: ["React", "Tailwind", "Framer Motion"],
-      liveLink: "/res",
+      liveLink: "/sel",
       githubLink: "https://github.com/yourusername/project1",
       img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600"
     },
