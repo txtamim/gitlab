@@ -21,15 +21,6 @@ const Portfolio = () => {
       liveLink: "/res",
       githubLink: "https://github.com/yourusername/project2",
       img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
-    },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      desc: "Personal portfolio with modern design and responsive layout",
-      tech: ["React", "Tailwind", "Vite"],
-      liveLink: "https://yourproject.com",
-      githubLink: "https://github.com/yourusername/project3",
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600"
     }
   ];
 
@@ -61,9 +52,9 @@ const Portfolio = () => {
               
               {/* Quick Socials (Desktop) */}
               <div className="mt-5 hidden md:flex gap-4 text-xl">
-                <a href="#" className="text-green-500 hover:text-green-600"><i className="bi bi-whatsapp"></i></a>
-                <a href="#" className="text-blue-600 hover:text-blue-700"><i className="bi bi-facebook"></i></a>
-                <a href="#" className="text-slate-900 hover:text-gray-700"><i className="bi bi-github"></i></a>
+                <a href="https://wa.me/8801890973552/" className="text-green-500 hover:text-green-600"><i className="bi bi-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/1H9JxmR4eq/" className="text-blue-600 hover:text-blue-700"><i className="bi bi-facebook"></i></a>
+                <a href="https://github.com/txtamim/" className="text-slate-900 hover:text-gray-700"><i className="bi bi-github"></i></a>
               </div>
             </div>
 
@@ -236,13 +227,13 @@ const Portfolio = () => {
             </div>
 
             {/* Horizontal Scroll Container */}
-            <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+            <div className="grid grid-cols-2 md:grid-cols-3 overflow-x-auto pb-4 scrollbar-hid pl-2">
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="flex-shrink-0 w-64 bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-indigo-400 transition-all duration-200 shadow-sm"
+                  className="w-36 h-72 md:h-auto md:w-64 bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-indigo-400 transition-all duration-200 shadow-sm"
                 >
-                  <div className="relative overflow-hidden h-40">
+                  <div className="relative overflow-hidden">
                     <img
                       src={project.img}
                       alt={project.title}
@@ -299,36 +290,35 @@ const Portfolio = () => {
             <div className="p-4 bg-slate-50 rounded-2xl border border-gray-100">
               <h3 className="font-bold text-blue-600 mb-2">Frontend</h3>
               <ul className="text-xs space-y-1 text-gray-500">
-                <li>React / Next.js</li>
-                <li>Tailwind CSS</li>
-                <li>Redux Toolkit</li>
+                <li>React</li>
+                <li>vanilla DOM</li>
+                <li>Tailwindcss</li>
                 <li>TypeScript</li>
               </ul>
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-gray-100">
               <h3 className="font-bold text-blue-600 mb-2">Backend</h3>
               <ul className="text-xs space-y-1 text-gray-500">
-                <li>Node.js / Express</li>
+                <li>Node.js</li>
                 <li>RESTful APIs</li>
                 <li>JWT Authentication</li>
-                <li>Socket.io</li>
               </ul>
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-gray-100">
               <h3 className="font-bold text-blue-600 mb-2">Database</h3>
               <ul className="text-xs space-y-1 text-gray-500">
-                <li>MongoDB (NoSQL)</li>
-                <li>PostgreSQL / MySQL</li>
-                <li>Redis Caching</li>
-                <li>Prisma ORM</li>
+                <li>MongoDB atas</li>
+                <li>local mongodb & setup</li>
+                <li>Mongo schema</li>
+                <li>MySQL basic</li>
               </ul>
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-gray-100">
               <h3 className="font-bold text-blue-600 mb-2">Tools</h3>
               <ul className="text-xs space-y-1 text-gray-500">
                 <li>Git & GitHub</li>
-                <li>Docker / AWS</li>
-                <li>Postman</li>
+                <li>AWS/vercel/render</li>
+                <li>API Tester</li>
                 <li>Linux / Termux</li>
               </ul>
             </div>
@@ -339,16 +329,16 @@ const Portfolio = () => {
         <footer className="mt-12 text-center pb-10">
           <p className="text-gray-400 text-sm mb-6 uppercase tracking-widest">Connect with me</p>
           <div className="flex justify-center gap-6">
-            <a href="#" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-green-500 text-xl hover:bg-green-500 hover:text-white transition-all">
+            <a href="https://wa.me/8801890973552/" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-green-500 text-xl hover:bg-green-500 hover:text-white transition-all">
               <i className="bi bi-whatsapp"></i>
             </a>
-            <a href="#" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-blue-600 text-xl hover:bg-blue-600 hover:text-white transition-all">
+            <a href="https://www.facebook.com/share/1H9JxmR4eq/" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-blue-600 text-xl hover:bg-blue-600 hover:text-white transition-all">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="#" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-slate-900 text-xl hover:bg-slate-900 hover:text-white transition-all">
+            <a href="https://github.com/txtamim/" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-slate-900 text-xl hover:bg-slate-900 hover:text-white transition-all">
               <i className="bi bi-github"></i>
             </a>
-            <a href="#" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-red-500 text-xl hover:bg-red-500 hover:text-white transition-all">
+            <a href="https://txtamim058@gmail.com" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-red-500 text-xl hover:bg-red-500 hover:text-white transition-all">
               <i className="bi bi-envelope"></i>
             </a>
           </div>

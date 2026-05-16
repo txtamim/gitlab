@@ -383,13 +383,13 @@ const Seller: React.FC = () => {
 
       {/* Big Footer */}
       <footer className="bg-slate-900 text-zinc-400 pt-16 pb-8 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mb-10">
+        <div className="max-w-6xl mx-20 grid md:grid-cols-2 gap-10 mb-10">
           <div>
             <h4 className="text-white font-bold text-xl mb-4">
               Sell<span className="text-amber-500">Store</span>
             </h4>
             <p className="text-sm">
-              Your trusted partner for premium electronics and gadgets since 2019.
+              Your trusted partner for premium electronics and gadgets since 2025.
             </p>
             <div className="flex gap-3 mt-4">
               <i className="bi bi-facebook text-xl hover:text-amber-500 cursor-pointer"></i>
@@ -398,39 +398,21 @@ const Seller: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <h5 className="text-white font-semibold mb-4">Quick Links</h5>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-amber-500">About Us</a></li>
-              <li><a href="#" className="hover:text-amber-500">Contact</a></li>
-              <li><a href="#" className="hover:text-amber-500">FAQ</a></li>
-              <li><a href="#" className="hover:text-amber-500">Track Order</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 className="text-white font-semibold mb-4">Categories</h5>
-            <ul className="space-y-2 text-sm">
-              {categories.slice(1).map(cat => (
-                <li key={cat}><a href="#" className="hover:text-amber-500">{cat}</a></li>
-              ))}
-            </ul>
-          </div>
 
           <div>
             <h5 className="text-white font-semibold mb-4">Contact Info</h5>
             <ul className="space-y-3 text-sm">
               <li className="flex gap-2">
                 <i className="bi bi-geo-alt-fill text-amber-500"></i>
-                123 Main Street, Dhaka, Bangladesh
+                Jaigirhaat Mithapukur Rongpur, Bangladesh
               </li>
               <li className="flex gap-2">
                 <i className="bi bi-telephone-fill text-amber-500"></i>
-                +880 1234 567890
+                +8801890973552
               </li>
               <li className="flex gap-2">
                 <i className="bi bi-envelope-fill text-amber-500"></i>
-                support@techstore.com
+                txtamim058@gmail.com
               </li>
             </ul>
           </div>

@@ -10,9 +10,10 @@ const Res = () => {
     { id: 5, name: "Creamy Mushroom Soup", desc: "Homemade soup with fresh mushrooms", price: "$8" },
     { id: 6, name: "Chocolate Lava Cake", desc: "Warm chocolate cake with vanilla ice cream", price: "$7" },
   ];
-
+  
   // স্টেট ম্যানেজমেন্ট
   const [searchTerm, setSearchTerm] = useState("");
+  const [see, setSee] = useState(true);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   // ইনপুট চেঞ্জের হ্যান্ডলার
@@ -42,9 +43,9 @@ const Res = () => {
           <span className="text-xl font-bold tracking-tight text-zinc-900">Flavor House</span>
         </div>
         <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-zinc-500 font-medium">
-          <span className="flex items-center gap-1"><i className="bi bi-telephone text-amber-500"></i> +880 1234 567890</span>
-          <span className="flex items-center gap-1"><i className="bi bi-clock text-amber-500"></i> 10AM - 11PM</span>
-          <span className="flex items-center gap-1"><i className="bi bi-truck text-amber-500"></i> Free Home Delivery</span>
+          <span className="flex items-center gap-1"><i className="bi bi-telephone text-amber-500"></i> +8801890973552</span>
+          <span className="flex items-center gap-1"><i className="bi bi-clock text-amber-500"></i> All time</span>
+          <span className="flex items-center gap-1"><i className="bi bi-truck text-amber-500"></i> Free Delivery</span>
         </div>
       </header>
 
@@ -153,7 +154,7 @@ const Res = () => {
           </div>
 
           {/* Dynamic Filtered Menu Display */}
-          <div className="grid md:grid-cols-2 gap-6 h-56 md:h-80 overflow-hidden">
+          <div className={`grid md:grid-cols-2 gap-6 ${see && "h-56"} md:h-80 overflow-hidden`}>
             {filteredMenu.length > 0 ? (
               filteredMenu.map((item) => (
                 <div key={item.id} className="flex justify-between items-start p-4 bg-white rounded-lg shadow-sm border border-zinc-100">
@@ -170,7 +171,7 @@ const Res = () => {
               </div>
             )}
           </div>
-          <button className="text-right w-full pr-5 mt-5">see more<i class="bi ml-2 pt-4 bi-chevron-down"></i></button>
+          <button onClick={() => setSee(!see)} className="text-right w-full pr-5 mt-5">see more<i class="bi ml-2 pt-4 bi-chevron-down"></i></button>
         </div>
       </section>
 
@@ -206,11 +207,9 @@ const Res = () => {
 
               <input 
                 type="text" 
-                placeholder="Delivery Date (e.g., DD/MM/YYYY or Today)" 
+                placeholder="Date DD/MM/YYYY or Today" 
                 className="px-4 py-2.5 border border-zinc-300 rounded-lg bg-white focus:outline-none focus:border-amber-500 text-sm" 
               />
-              
-              <input type="time" className="px-4 py-2.5 border border-zinc-300 rounded-lg bg-white focus:outline-none focus:border-amber-500 text-sm" />
               <input type="number" placeholder="Quantity / Item Count" min="1" className="px-4 py-2.5 border border-zinc-300 rounded-lg bg-white focus:outline-none focus:border-amber-500 text-sm md:col-span-2" />
               
               <button type="submit" className="md:col-span-2 mt-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition shadow-md shadow-amber-100 flex items-center justify-center gap-2">
@@ -220,31 +219,29 @@ const Res = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact Info Grid */}
-      <section className="px-6 py-12 bg-zinc-50 border-t border-zinc-100">
+      
+      {/* Footer */}
+      <footer className="bg-zinc-500 text-zinc-400 py-6 text-center">
+      <section className="px-6 py-12 ">
         <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
-          <div className="p-4 text-center bg-white rounded-xl shadow-sm">
-            <i className="bi bi-geo-alt-fill text-amber-500 text-2xl mb-2 block"></i>
-            <h3 className="font-semibold text-zinc-900 text-sm">Location</h3>
-            <p className="text-xs text-zinc-600 mt-1">123 Main Street, Dhaka</p>
+          <div className="p-4 text-center bg-zinc-400 rounded-xl shadow-sm">
+            <i className="bi bi-geo-alt-fill text-cyan-300 text-2xl mb-2 block"></i>
+            <h3 className="font-semibold text-zinc-100 text-sm">Location</h3>
+            <p className="text-xs text-zinc-50 mt-1">Mithapukur Rongpur</p>
           </div>
-          <div className="p-4 text-center bg-white rounded-xl shadow-sm">
-            <i className="bi bi-telephone-fill text-amber-500 text-2xl mb-2 block"></i>
-            <h3 className="font-semibold text-zinc-900 text-sm">Phone</h3>
-            <p className="text-xs text-zinc-600 mt-1">+880 1234 567890</p>
+          <div className="p-4 text-center bg-zinc-400 rounded-xl shadow-sm">
+            <i className="bi bi-telephone-fill text-cyan-300 text-2xl mb-2 block"></i>
+            <h3 className="font-semibold text-zinc-100 text-sm">Phone</h3>
+            <p className="text-xs text-zinc-50 mt-1">+880 1890973552</p>
           </div>
-          <div className="p-4 text-center bg-white rounded-xl shadow-sm">
-            <i className="bi bi-clock-fill text-amber-500 text-2xl mb-2 block"></i>
-            <h3 className="font-semibold text-zinc-900 text-sm">Hours</h3>
-            <p className="text-xs text-zinc-600 mt-1">10AM - 11PM Daily</p>
+          <div className="p-4 text-center bg-zinc-400 rounded-xl shadow-sm">
+            <i className="bi bi-clock-fill text-cyan-300 text-2xl mb-2 block"></i>
+            <h3 className="font-semibold text-zinc-100 text-sm">Hours</h3>
+            <p className="text-xs text-zinc-50 mt-1">11am to 10pm </p>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-zinc-900 text-zinc-400 py-6 text-center">
-        <p className="text-xs">© 2026 Flavor House. All rights reserved.</p>
+        <p className="text-xs text-white">© 2026 Flavor House. All rights reserved.</p>
       </footer>
     </div>
   );
