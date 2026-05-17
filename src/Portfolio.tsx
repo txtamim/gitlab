@@ -17,7 +17,7 @@ const Portfolio = () => {
       id: 2,
       title: "Restaurant Website",
       desc: "Advertising a restaurant for better sales than traditional methods via web platform.",
-      tech: ["Node.jss", "Express.js", "Tailwind"],
+      tech: ["Node", "Express"],
       liveLink: "/res",
       githubLink: "https://github.com/txtamim/gitlab/blob/main/src/Res.tsx",
       img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
@@ -231,13 +231,13 @@ const Portfolio = () => {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="w-36 h-72 md:h-auto md:w-64 bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-indigo-400 transition-all duration-200 shadow-sm"
+                  className="w-36 h-auto md:h-auto md:w-64 bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-indigo-400 transition-all duration-200 shadow-sm"
                 >
                   <div className="relative overflow-hidden">
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-36 h-28 object-cover"
                     />
                   </div>
 
