@@ -9,8 +9,6 @@ const Res = () => {
     { id: 4, name: "Veggie Pizza", desc: "Loaded with fresh vegetables and mozzarella", price: "$12" },
     { id: 5, name: "Creamy Mushroom Soup", desc: "Homemade soup with fresh mushrooms", price: "$8" },
     { id: 6, name: "Chocolate Lava Cake", desc: "Warm chocolate cake with vanilla ice cream", price: "$7" },
-    { id: 7, name: "Lag pease", desc: "Hot chiken leag pease with some delicius masala", price: "$1" },
-    { id: 8, name: "Khassi", desc: "With hot chicken meat, Sweet Khassi biriani", price: "$4" },
   ];
   
   // স্টেট ম্যানেজমেন্ট
@@ -44,7 +42,7 @@ const Res = () => {
           <i className="bi bi-egg-fried text-amber-500 text-2xl"></i>
           <span className="text-xl font-bold tracking-tight text-zinc-900">Flavor House</span>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-zinc-500 font-medium ">
+        <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-zinc-500 font-medium">
           <span className="flex items-center gap-1"><i className="bi bi-telephone text-amber-500"></i> +8801890973552</span>
           <span className="flex items-center gap-1"><i className="bi bi-clock text-amber-500"></i> All time</span>
           <span className="flex items-center gap-1"><i className="bi bi-truck text-amber-500"></i> Free Delivery</span>
