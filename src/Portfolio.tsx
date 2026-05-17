@@ -237,7 +237,7 @@ const Portfolio = () => {
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="w-36 h-28 object-cover"
+                      className="h-28 md:w-full md:h-auto object-cover"
                     />
                   </div>
 
@@ -329,7 +329,7 @@ const Portfolio = () => {
         <footer className="mt-12 text-center pb-10">
           <p className="text-gray-400 text-sm mb-6 uppercase tracking-widest">Connect with me</p>
           <div className="flex justify-center gap-6">
-            <a href="https://wa.me/8801890973552/" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-green-500 text-xl hover:bg-green-500 hover:text-white transition-all">
+            <a href="https://wa.me/8801890973552?text=Hey,%0ACan%20we%20chat%20each%20%26&20other?" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-green-500 text-xl hover:bg-green-500 hover:text-white transition-all">
               <i className="bi bi-whatsapp"></i>
             </a>
             <a href="https://www.facebook.com/share/1H9JxmR4eq/" className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-blue-600 text-xl hover:bg-blue-600 hover:text-white transition-all">
