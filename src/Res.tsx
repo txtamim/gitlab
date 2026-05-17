@@ -9,6 +9,8 @@ const Res = () => {
     { id: 4, name: "Veggie Pizza", desc: "Loaded with fresh vegetables and mozzarella", price: "$12" },
     { id: 5, name: "Creamy Mushroom Soup", desc: "Homemade soup with fresh mushrooms", price: "$8" },
     { id: 6, name: "Chocolate Lava Cake", desc: "Warm chocolate cake with vanilla ice cream", price: "$7" },
+    { id: 7, name: "Lag pease", desc: "Hot chiken leag pease with some delicius masala", price: "$1" },
+    { id: 8, name: "Khassi", desc: "With hot chicken meat, Sweet Khassi biriani", price: "$4" },
   ];
   
   // স্টেট ম্যানেজমেন্ট

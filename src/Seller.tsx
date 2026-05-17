@@ -342,7 +342,7 @@ const Seller: React.FC = () => {
             <div className="bg-white p-6 rounded-xl text-center shadow-sm">
               <i className="bi bi-shield-check text-3xl text-amber-500 mb-3"></i>
               <h4 className="font-semibold mb-1">Secure Payment</h4>
-              <p className="text-sm text-zinc-600">100% secure checkout with SSL encryption</p>
+              <p className="text-sm text-zinc-600">100% secure checkout with SSL encryption </p>
             </div>
           </div>
 
