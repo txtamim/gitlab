@@ -10,24 +10,24 @@ export default function LandingPage() {
 
   const pro = [
     { 
-      type:"Free", 
-      time:"/month", 
-      rate:"free", 
+      type:"Ultra Pro", 
+      time:"/year", 
+      rate:"$80", 
       css:{ 
-        all:"bg-zinc-200 border-zinc-700", 
-        h3:"text-blue-400", 
-        p:"text-orange-500", 
-        span:"text-cyan-700", 
-        ul:"text-zinc-500" 
+        all:"bg-gradient-to-b from-indigo-600 to-blue-500", 
+        h3:"text-white", 
+        p:"text-orange-200", 
+        span:"text-cyan-300", 
+        ul:"text-zinc-50" 
       }, 
-      faci:["1 Project", "Basic components", "Community support", "300+ use case"]
+      faci:["500+ Project", "All components", "Full Community support", "Unlimited use case"]
     },
     { 
       type:"Premium", 
       time:"/month", 
       rate:"$5", 
       css:{ 
-        all:"bg-blue-400", 
+        all:"bg-gradient-to-b from-indigo-400 to-blue-400", 
         h3:"", 
         p:"text-orange-200", 
         span:"text-cyan-300", 
@@ -36,31 +36,32 @@ export default function LandingPage() {
       faci:["20+ Project", "Every uses components", "Full Community support", "Unlimited use case"]
     },
     { 
-      type:"Ultra Pro", 
-      time:"/year", 
-      rate:"$80", 
+      type:"Free", 
+      time:"/month", 
+      rate:"free", 
       css:{ 
-        all:"bg-indigo-400", 
-        h3:"text-white", 
-        p:"text-orange-200", 
-        span:"text-cyan-300", 
-        ul:"text-zinc-50" 
+        all:"bg-gradient-to-b from-cyan-200 to-zinc-200 border border-zinc-500", 
+        h3:"text-blue-400", 
+        p:"text-orange-500", 
+        span:"text-cyan-700", 
+        ul:"text-zinc-500" 
       }, 
-      faci:["500+ Project", "All components", "Full Community support", "Unlimited use case"]
+      faci:["1 Project", "Basic components", "Community support", "300+ use case"]
     }
   ];
 
   return (
-    <div className="bg-zinc-100 text-white font-sans scroll-smooth">
+    <div className=" bg-zinc-100 text-white font-sans scroll-smooth">
       
       {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 z-50">
+      <nav className="fixed top-0 w-full bg-zinc-700 backdrop-blur-md border-b border-zinc-800 z-50">
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
           <h1 className="text-2xl font-bold">Nova</h1>
           <div className="hidden md:flex gap-8 text-zinc-400">
             <button onClick={() => scrollTo("features")} className="hover:text-white">Features</button>
             <button onClick={() => scrollTo("pricing")} className="hover:text-white">Pricing</button>
             <button onClick={() => scrollTo("faq")} className="hover:text-white">FAQ</button>
+            <button onClick={() => scrollTo("cta")} className="hover:text-white">Building</button>
           </div>
           <button 
             onClick={() => scrollTo("cta")}
@@ -68,20 +69,24 @@ export default function LandingPage() {
           >
             Get Started
           </button>
-          <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+          <button className="md:hidden text-2xl text-white" onClick={() => setMenuOpen(!menuOpen)}><i className={`bi bi-${menuOpen ? "x" : "list"} text-2xl`}></i></button>
         </div>
 
         {menuOpen && (
-          <div className="md:hidden flex-col gap-4 p-6 bg-zinc-900 border-t border-zinc-800">
+          <div className="md:hidden flex flex-col gap-6 p-6 bg-zinc-700 border-zinc-800">
             <button onClick={() => scrollTo("features")}>Features</button>
             <button onClick={() => scrollTo("pricing")}>Pricing</button>
             <button onClick={() => scrollTo("faq")}>FAQ</button>
+            <button 
+            onClick={() => scrollTo("cta")}
+            className="px-5 py-2 bg-indigo-600 rounded-xl hover:bg-indigo-700 transition"
+            >Build</button>
           </div>
         )}
       </nav>
 
       {/* Hero */}
-      <section className="pb-10 flex-col justify-center items-center text-center px-6 pt-32">
+      <section className="pb-10 flex-col justify-center items-center text-center"><div  className="bg-gradient-to-b from-indigo-300 to-zinc-100 pt-32 pb-10 px-5">
         <h1 className="text-5xl md:text-7xl font-bold leading-tight text-zinc-800">
           Build Faster with <span className="text-indigo-500">Nova</span>
         </h1>
@@ -99,7 +104,8 @@ export default function LandingPage() {
             Learn More
           </button>
         </div>
-        <div className="mt-16 max-w-3xl mx-auto mb-10">
+        </div>
+        <div className="mt-16 max-w-3xl mb-10 mx-auto px-5">
           <div className="bg-zinc-300 rounded-2xl h-96 border-zinc-700 flex items-center justify-center text-zinc-500 shadow-2xl">
             Product Screenshot / Demo Video Here
           </div>
@@ -163,6 +169,7 @@ export default function LandingPage() {
       <section id="faq" className="py-24 px-6 bg-zinc-200">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-cyan-600">FAQ</h2>
+          <p className="text-center text-zinc-500 mb-12">Some common problem & question of all with answer</p>
           <div className="space-y-6">
             {[
               { q: "Can I cancel anytime?", a: "Yes, cancel anytime from your dashboard. No questions asked." },

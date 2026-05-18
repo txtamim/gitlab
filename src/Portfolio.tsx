@@ -29,18 +29,18 @@ const Portfolio = () => {
       tech: ["Node", "Express"],
       liveLink: "/pro",
       githubLink: "https://github.com/txtamim/gitlab/blob/main/src/Res.tsx",
-      img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+      img: "https://static.vecteezy.com/system/resources/thumbnails/000/542/011/small/abstract-background-website-landing-page.png"
     }
   ];
 
   return (
     <div className="bg-slate-50 min-h-screen font-sans text-gray-800">
       {/* --- Main Container --- */}
-      <div className="max-w-5xl mx-auto px-4 py-8">
+      <div className="max-w-5xl mx-auto [&>*:not(:nth-child(1))]:mx-4 pt-0 py-8">
         
         {/* --- Hero Section --- */}
-        <section className="rounded-3xl p-1 md:p-12 mb-8 ">
-          <div className="flex flex-row items-center gap-4 md:gap-10">
+        <section className="pt-8 p-1 md:p-12 mb-8 bg-gradient-to-b from-indigo-300 to-zinc-100 px-4">
+          <div className="flex flex-row items-center gap-4 md:gap-10 ">
             {/* Intro Text */}
             <div className="flex-1">
               <span className="text-sm hidden md:block md:text-xl text-gray-400 uppercase tracking-wider">available for hire</span>
@@ -230,9 +230,9 @@ const Portfolio = () => {
           <div className="max-w-full mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-zinc-900">
-                My Projects
+                Available Template 
               </h2>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-indigo-500 to-violet-500 mx-auto"></div>
+              <div className="w-40 mx-auto text-zinc-500 mt-10">Some template of me. for selling </div>
             </div>
 
             {/* Horizontal Scroll Container */}
@@ -240,9 +240,9 @@ const Portfolio = () => {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="w-36 h-auto md:h-auto md:w-64 bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-indigo-400 transition-all duration-200 shadow-sm"
+                  className="w-36 h-auto md:h-auto md:w-64 bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-indigo-400 transition-all duration-200 shadow-sm mt-5"
                 >
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden h-28">
                     <img
                       src={project.img}
                       alt={project.title}
