@@ -106,9 +106,7 @@ export default function LandingPage() {
         </div>
         </div>
         <div className="mt-16 max-w-3xl mb-10 mx-auto px-5">
-          <div className="bg-zinc-300 rounded-2xl h-96 border-zinc-700 flex items-center justify-center text-zinc-500 shadow-2xl">
-            Product Screenshot / Demo Video Here
-          </div>
+          <img className="bg-zinc-300 rounded-2xl h-96 border-zinc-700 flex items-center justify-center text-zinc-500 shadow-2xl" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=800&fit=crop"/>
         </div>
       </section>
 
