@@ -21,6 +21,15 @@ const Portfolio = () => {
       liveLink: "/res",
       githubLink: "https://github.com/txtamim/gitlab/blob/main/src/Res.tsx",
       img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+    },
+    {
+      id: 2,
+      title: "Product landing page",
+      desc: "Advertising a restaurant for better sales than traditional methods via web platform.",
+      tech: ["Node", "Express"],
+      liveLink: "/pro",
+      githubLink: "https://github.com/txtamim/gitlab/blob/main/src/Res.tsx",
+      img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
     }
   ];
 
