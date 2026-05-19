@@ -77,7 +77,7 @@ const products = [
 ];
 
 
-const fallbackImg = "https://images.unsplash.com/photo-1587825140708-df23e08639e3?w=600";
+const fallbackImg = " https://images.unsplash.com/photo-1587825140708-df23e08639e3?w=600";
 
 const Seller: React.FC = () => {
   const [search, setSearch] = useState("");

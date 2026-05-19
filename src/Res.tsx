@@ -34,7 +34,7 @@ const Res = () => {
   );
 
   return (
-    <div className="font-sans text-zinc-900 bg-white">
+    <div className="font-sans text-zinc-900 bg-white ">
       
       {/* Top Header Section */}
       <header className="border-b border-zinc-100 py-4 px-6 sticky top-0 bg-white/90 backdrop-blur-md z-50 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-2">

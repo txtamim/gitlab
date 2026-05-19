@@ -59,7 +59,7 @@ export default function LandingPage() {
           <h1 className="text-2xl font-bold">Nova</h1>
           <div className="hidden md:flex gap-8 text-zinc-400">
             <button onClick={() => scrollTo("features")} className="hover:text-white">Features</button>
-            <button onClick={() => scrollTo("pricing")} className="hover:text-white">Pricing</button>
+            <button onClick={() => scrollTo("pricing")} className="hover:text-white ">Pricing</button>
             <button onClick={() => scrollTo("faq")} className="hover:text-white">FAQ</button>
             <button onClick={() => scrollTo("cta")} className="hover:text-white">Building</button>
           </div>
